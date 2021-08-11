@@ -25,8 +25,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'chmod +x /var/jenkins_home/worspace/PetClinicDeclarativePipeline/target/*jar'
-                sh 'java -jar /var/jenkins_home/worspace/PetClinicDeclarativePipeline/target/*jar'
+                sh 'java -jar /var/jenkins_home/workspace/PetClinicDeclarativePipeline/target/*jar'
             }
         }
     }
